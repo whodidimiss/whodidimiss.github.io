@@ -8,6 +8,7 @@ body {
   max-width:none; 
   background: white; 
   border-bottom: solid 2px #222;
+  text-shadow: #DDD 1px 1px 2px;
 }
 
 .fullwidth {
@@ -19,19 +20,19 @@ body {
   margin-bottom:30px;
 }
 
-.titlerow h2 {
+.titlerow .subtitle {
   font-family: 'Cantata One', serif; 
   position:absolute;
-  color:#EEE;
+  color:#DDD;
   left:15px;
-  text-shadow: #DDD 1px 1px 2px;
+  z-index:1;
 }
 
 .titlerow h1 {
   font-family: 'Cantata One', serif; 
   text-align:right; 
   padding:25px 25px 0 0; 
-  text-shadow: #DDD 1px 1px 2px;
+  z-index:2;
 }
 
 .nobox {
@@ -44,40 +45,26 @@ body {
 
 /** Main content area: lots of margins to remove gap between content and menu, while leaving responsiveness **/
 
-.correctformargin {
-  padding-left:30px;
+#content  .menuitem {
+  background-color: #EEE;
+  border:solid 1px #CCC;
+  padding: 7px 0 10px 0;
+  text-align: center;
 }
 
-.nopaddingleft {
-  padding-left: 0;
-}
 
-.negativemargin {
-  margin-left:-14px;
-}
-
-#menu {
-  background-color: #EEE; border-radius: 2px; margin-right:-2px; padding: 0 0 0 10px; margin-bottom:40px;
-}
-
-#menu li {
-  border-bottom: solid 1px #634;
-  margin-bottom:0;
-}
-
-#menu li:last-child {
-  border-bottom: none;
-}
-
-#menu a {
+#content a {
   color: #111; font-family: 'Raleway', sans-serif;
 }
 
 .content {
-margin-top:-20px;
+  padding:0;
 }
 
 .content .container {
-min-height: 450px; padding: 20px 0 0 27px; background-color:White;
+min-height: 450px; 
+padding: 20px 0 0 27px; 
+background-color:White;
 border: solid 1px #999;
+box-sizing: padding-box;
 }
