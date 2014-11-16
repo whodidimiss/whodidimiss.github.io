@@ -19,6 +19,13 @@ body {
   margin-bottom:30px;
 }
 
+.titlerow h2 {
+  font-family: 'Cantata One', serif; 
+  position:absolute;
+  color:#EEE;
+  left:15px;
+}
+
 .titlerow h1 {
   font-family: 'Cantata One', serif; 
   text-align:right; 
