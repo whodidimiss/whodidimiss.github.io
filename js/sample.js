@@ -5,21 +5,28 @@ sample = function(window, document, undefined) {
 	;
 return {
   open_email: function() {
-	  var url = "mailto:";
+	  var url = "mailto:"
+	  , content
+	  ;
 	  
-	  url += $('#eventEmail').value;
+	  url += $('#eventEmail').get(0) ? $('#eventEmail').get(0).value : "";
 	  
 	  url += "?bcc=whodidyoumiss@gmail.com";
 	  
 	  url += "&subject=";
-	  url += this.eventName ? "The Speaker line up for "  + this.eventName :  "The diversity of speakers at your event";
+	  url += this.eventName ? encodeURIComponent("The Speaker line up for "  + this.eventName) :   encodeURIComponent("The diversity of speakers at your event");
 	  
 	  url += "&body=";
 	  
-	  $.each($('.content.active').get('.text'), function(index, value) {
-			url += value.text();
-	  });
-	  url += body_elements
+	  content = $('.content.active .text');
+	  
+	  if(content) {
+	    $.each(content, function(index, value) {
+			url +=  encodeURIComponent(value.text());
+	    });
+	  }
+	  
+	  alert(url);
 
 	  window.location.href = url;
   }
