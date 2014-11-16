@@ -1,4 +1,4 @@
-var sample = function() {
+sample = function(window, document, undefined) {
 	var eventName
 	, eventEmail
 	, group
@@ -24,12 +24,10 @@ return {
 	  window.location.href = url;
   }
   
-  , set_event_email
-  
   , set_event_name: function(event_name_object) {
     $.each($('.eventName'), function(index, value) {
 		value.text(event_name_object.value);
-	}
+	});
 	
 	this.eventName = event_name_object.value;
   
@@ -38,9 +36,10 @@ return {
   , set_marginalize_group: function(marginalized_group_object) {
       $.each($('.marginalizedGroup'), function(index, value) {
 		value.text(marginalized_group_object.value);
-	}
+	});
 	
 	this.group = marginalized_group_object.value;
   }
+  };
 
-}
+}(window, document);
