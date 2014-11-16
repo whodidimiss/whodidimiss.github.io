@@ -7,7 +7,7 @@ return {
   open_email: function() {
 	  var url = "mailto:";
 	  
-	  url += eventEmail? eventEmail : "";
+	  url += $('#eventEmail').value;
 	  
 	  url += "?bcc=whodidyoumiss@gmail.com";
 	  
