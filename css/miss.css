@@ -58,6 +58,19 @@ body {
   text-align: center;
 }
 
+.tabs.inline > dd {
+  border-right: solid 1px #999;
+  border-top: solid 1px #999;
+}
+
+.tabs.inline > dd:first-child {
+  border-left: solid 1px #999;
+}
+
+.tabs.inline dd > a {
+  font-size:0.8em;
+}
+
 
 #content a {
   color: #111; font-family: 'Raleway', sans-serif;
@@ -69,8 +82,32 @@ body {
 
 .content .container {
 min-height: 450px; 
-padding: 20px 0 0 27px; 
+padding: 20px 20px 0 27px; 
 background-color:White;
 border: solid 1px #999;
 box-sizing: padding-box;
+}
+
+/** Resource Page **/
+
+.accordion .accordion-navigation > a {
+  border-bottom: solid 1px #CCC;
+}
+
+.accordion .accordion-navigation > a:last-child {
+  border-bottom: none;
+}
+
+.sampleletter {
+	background-color: white;
+}
+
+.openinemail {
+  color:white !important;
+  margin:10px 0;
+  box-shadow: 0 0 2px #333;
+}
+
+.inline dd:not(.active) a {
+  box-shadow:inset 0 -2px 2px #999;
 }
