@@ -7,6 +7,8 @@ return {
   open_email: function() {
 	  var url = "mailto:"
 	  , content
+	  , text_area
+	  , i
 	  ;
 	  
 	  url += $('#eventEmail').get(0) ? $('#eventEmail').get(0).value : "";
@@ -14,21 +16,15 @@ return {
 	  url += "?bcc=whodidyoumiss@gmail.com";
 	  
 	  url += "&subject=";
-	  url += this.eventName ? encodeURIComponent("The Speaker line up for "  + this.eventName) :   encodeURIComponent("The diversity of speakers at your event");
+	  url += this.eventName ? "The Speaker line up for "  + this.eventName : "The diversity of speakers at your event";
 	  
 	  url += "&body=";
-	  
-	  content = $('.content.active .text');
-	  
-	  if(content) {
-	    $.each(content, function(index, value) {
-			url +=  encodeURIComponent(value.text());
-	    });
-	  }
-	  
-	  alert(url);
-
+	  url +=  $('.content.active .text').text();
+		
+      url = encodeURI(url);
 	  window.location.href = url;
+	  
+	  return url;
   }
   
   , set_event_name: function(event_name_object) {
