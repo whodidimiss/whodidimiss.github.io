@@ -14,7 +14,7 @@ body {
 }
 
 .underline {
-  text-style: underlined;
+  text-style: underlined !important;
 }
 
 .fullwidth {
@@ -46,7 +46,7 @@ body {
 }
 
 .whitetext {
-  color: white;
+  color: white !important;
 }
 
 /** Main content area: lots of margins to remove gap between content and menu, while leaving responsiveness **/
