@@ -58,6 +58,10 @@ body {
   text-align: center;
 }
 
+#content  .menuitem.active {
+  background-color: white;
+}
+
 .tabs.inline > dd {
   border-right: solid 1px #999;
   border-top: solid 1px #999;
@@ -84,7 +88,6 @@ body {
 min-height: 450px; 
 padding: 20px 20px 20px 27px; 
 background-color:White;
-border: solid 1px #999;
 box-sizing: padding-box;
 }
 
@@ -110,4 +113,9 @@ box-sizing: padding-box;
 
 .inline dd:not(.active) a {
   box-shadow:inset 0 -1px 1px #999;
+}
+
+
+.placeholder {
+  color:#999;
 }

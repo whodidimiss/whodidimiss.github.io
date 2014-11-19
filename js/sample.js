@@ -27,22 +27,24 @@ return {
 	  return url;
   }
   
-  , set_event_name: function(event_name_object) {
-    $.each($('.eventName'), function(index, value) {
-		value.text(event_name_object.value);
-	});
+  , set_value_on_change: function(object) {
+      if(!object) {
+	    return;
+	  }
 	
-	this.eventName = event_name_object.value;
-  
-  }
-  
-  , set_marginalize_group: function(marginalized_group_object) {
-      $.each($('.marginalizedGroup'), function(index, value) {
-		value.text(marginalized_group_object.value);
-	});
+	  var typeClass = $(object).data('type');
+	  if(!typeClass) {
+	    return;
+	  }
 	
-	this.group = marginalized_group_object.value;
-  }
-  };
+	  var elements = $("."+typeClass);
+	  if(!elements) {
+	    return;
+	  }
+	
+      elements.html(object.value);
+	  elements.removeClass('placeholder');
+    }
+};
 
 }(window, document);

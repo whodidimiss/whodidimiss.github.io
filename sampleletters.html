@@ -28,89 +28,107 @@
 	</div>
 	
 	<div class="row" id="content">
-	 <div class="large-2 columns menuitem">
+	  <div class="large-2 columns menuitem">
 		<a href="/">About</a>
 	  </div>
-	 <div class="large-2 columns menuitem">
+	  <div class="large-2 columns menuitem active">
 		<a href="#">Sample Letters</a>
 	  </div>
 	  <div class="large-2 columns end menuitem">
-		 <a href="resources2.html">Resources</a>
+	    <a href="resources2.html">Resources</a>
 	  </div>
+	  
 	  <div class="content large-12 columns end">
 		<div class="container">
+		  <div>Here are some sample letters you can customize to apply to the event that is missing voices of marginalized groups.  </div>
+		  <div>You can copy and paste the result, or open in your email with the button below.  (Don't worry, either way you will have a chance to edit them before sending.)</div>
+
+		  <dl class="tabs inline" data-tab role="tablist">
+			<dd class="active">
+			  <a href="#consideringattending">For an event you are considering attending</a>
+			</dd>
+		    <dd>
+		      <a href="#alreadyattended">For an event you already attended</a>
+		    </dd>
+            <dd>
+			  <a href="#simpleletter">A Simple Version</a>
+			</dd>
+          </dl>
+		  
+          <div class="tabs-content panel sampleletter">
+            <input id="eventEmail" type="text" style="display: inline; width: 300px;" placeholder="Email of Event Organizer"/>
+            <div class="content" id="simpleletter">
+              <p class="text">Dear <input type="text" style="display: inline; width: 300px;" placeholder="Person Being Addressed"/>,</p>
+
+               <p class="text">
+				When I saw the announcement for <input type="text" style="display: inline; width: 300px;" placeholder="Event Name"/> I went to your website to see who would be speaking/presenting.  As I looked through the list of talks and speakers I did not see <select name="maybetheyhavesome" style="display:inline; width:100px;"><option value="any" selected>any</option><option value="many">many</option></select> speakers who are <input type="text" style="display: inline; width: 300px;" placeholder="marginalized group"/>.  The presence of additional voices will spark conversations and insights that wouldn’t happen without the presence of <input type="text" style="display: inline; width: 300px;" placeholder="members of the marginalized group"/>.  
+               </p>
+			   <br/>
+               <p class="text">
+				There are a variety of ways in which unintentional bias can lead to homogenous speakers at an event. There are also a variety of concrete ways to change this including <input type="text" style="display: inline; width: 475px;" placeholder="ways you think they should change, i.e. adopting blind speaker review"/>. For further information please check out <input type="text" style="display: inline; width: 300px;" placeholder="site you recommend"/> which has a variety of resources to help organizers increase diversity
+               </p>
+          </div>
 		  
 		  
+          <div class="content" id="alreadyattended">
+            <p class="text">While I attended <input type="text" style="display: inline; width: 300px;" data-type="eventName" placeholder="Event Name"/> last weekend, I was disappointed to notice the oversights in your speaker line up leading to it being made up of nothing but <input data-type="privilegedGroup" type="text" style="display: inline;  width: 300px;" placeholder="the over-represented group, i.e. white men"/>.
+            <aside style="display:inline;">
+              <div style="color:#999;">Add some additional information about how this particular conference got into such a state (don't worry, these instructions won't copy):</div>
+              <dl class="tabs vertical" data-tab role="tablist">
+                <dd><a href="#panel1"  style="font-size:11px;">None</a></dd>
+                <dd class="active"><a href="#panel2" style="font-size:11px;">Only invited authors of books</a></dd>
+                <dd><a href="#panel3" style="font-size:11px;">Didn't recruit diverse potential speakers</a></dd>
+                <dd><a href="#panel4" style="font-size:11px;">Doesn't cover expenses for speakers</a></dd>
+                <dd><a href="#panel5" style="font-size:11px;">Doesn't even have a code of conduct</a></dd>
+              </dl>
+            </aside>
+            <div class="tabs-content">
+              <div class="content" id="panel1">
+                <p> </p>
+              </div>
+			  
+              <div class="content active" id="panel2">
+				Perhaps your prioritization of people with their own books to sell led to inadvertent systematic discrimination, as you were reliant on the discriminatory publishing world and more generally on people without significant non-work-related demands on their time. Since I was also disappointed in how much of the conference devolved into the speakers plugging their own books, I am confident you could kill two birds with one stone by instead seeking out the most qualified speakers.
+			  </div>
+			  <div class="content" id="panel3">
+				Perhaps your selection process produced a skewed pool of potential speakers, but it is disappointing that when you saw that outcome you did not step back to consider which speakers were missing from your consideration.
+			  </div>
+			  <div class="content" id="panel4">
+				Perhaps your inability to cover even conference expenses, much less compensate your speakers, led to only people with the support of a company being willing to parcipate, leaving you vulnerable to the discriminatory policies of those companies.  Even if you do not routinely cover expenses or provide compensation, consider reaching out directly to speakers that would enrich your program and offering to compensate them.
+			  </div>
+			  <div class="content" id="panel5">
+				You should consider adopting an anti-harassment policy and reaching out to a more diverse group of potential speakers.  This could increase attendence, both because more people will feel comfortable attending but also because your attendees will have the opportunity to hear from the excellent speakers you have thus far obviously overlooked.
+			  </div>
+			</div>
+            <br/>
+            <div class="text">This impression has a direct impact on your event.  When I was trying to build a group from <input type="text" style="display:inline; width: 300px; margin:0; padding:0 5px;" placeholder="Your Company or organization"/> to attend this event, it was difficult to generate interest among some people who would normally be enthusiastic about attending an event like this.  Without any <input data-type="marginalizedGroup" type="test" style="display:inline; width:300px;" placeholder="members of the marginalize group overlooked"/> speaking <select name="reallybad" style="display:inline; width:300px;"><option value="or even token efforts towards diversity" selected>or even token efforts towards diversity</option><option value=""></option></select>, there was no evidence that there would be other <span class="marginalizedGroup placeholder">members of the marginalized group</span> there or that the organizers of this event see <span class="marginalizedGroup placeholder">members of the marginalized group</span> as peers.  Experience has taught that this attitude is likely to be reflected in the attendees of your event, cultivating an atmosphere that supports microaggressions and potentially outright harassment.  It can also signal that any complaints about the conference or behavior of attendees will be brushed off as disruptive to the existing exclusionary atmosphere that it appears this event has cultivated.</div>
+            <br/>
+			<p class="text">Going forward, if I see another line up of all <span class="privilegedGroup placeholder">privileged Group</span> speaking at your conference, I will have to assume you are actively working to run a conference to alienate <span class="marginalizedGroup placeholder">members of the marginalized group</span>.  Since I’m not interested in that environment, this may be my last <span class="eventName placeholder">event name</span>; I could instead have attended <input type="text" style="display:inline; width: 500px; margin:0;" placeholder="Other conference that bothered to make an effort"/> where I know I and my peers would both have felt more welcome.</p>
 
-<div>Here are some sample letters you can customize to apply to the event that is missing voices of marginalized groups.  </div>
+		  </div>
 
-<dl class="tabs inline" data-tab role="tablist">
-  <dd class="active"><a href="#consideringattending">For an event you are considering attending</a></dd>
-  <dd><a href="#alreadyattended">For an event you already attended</a></dd>
-  <dd><a href="#simpleletter">A Simple Version</a></dd>
-</dl>
-<div class="tabs-content panel sampleletter">
-<input id="eventEmail" type="text" style="display: inline; width: 300px;" placeholder="Email of Event Organizer"/>
-<div class="content" id="simpleletter">
-<p class="text">Dear <input type="text" style="display: inline; width: 300px;" placeholder="Person Being Addressed"/>,</p>
-
-<p class="text">When I saw the announcement for <input type="text" style="display: inline; width: 300px;" placeholder="Event Name"/> I went to your website to see who would be speaking/presenting.  As I looked through the list of talks and speakers I did not see <select name="maybetheyhavesome" style="display:inline; width:100px;"><option value="any" selected>any</option><option value="many">many</option></select> speakers who are <input type="text" style="display: inline; width: 300px;" placeholder="members of marginalized group"/>.  The presence of additional voices will spark conversations and insights that wouldn’t happen without the presence of <input type="text" style="display: inline; width: 300px;" placeholder="marginalized group"/>.  
-</p>
-<p class="text">
-There are a variety of ways in which unintentional bias can lead to homogenous speakers at an event. There are also a variety of concrete ways to change this including <input type="text" style="display: inline; width: 350px;" placeholder="ways you think they should change, i.e. adopting blind speaker review"/>. For further information please check out <input type="text" style="display: inline; width: 300px;" placeholder="site you recommend"/> which has a variety of resources to help organizers increase diversity
-</p>
-
-</div>
-<div class="content" id="alreadyattended">
-<p class="text">While I attended <input type="text" style="display: inline; width: 300px;" placeholder="Event Name"/> last weekend, I was disappointed to notice the oversights in your speaker line up leading to it being made up of nothing but <input type="text" style="display: inline;  width: 300px;" placeholder="the over-represented group, i.e. white men"/>.
-<aside style="display:inline;">
-<div style="color:#999;">Add some additional information about how this particular conference got into such a state:</div>
-<dl class="tabs vertical" data-tab role="tablist">
-  <dd class="active"><a href="#panel1"  style="font-size:11px;">None</a></dd>
-  <dd><a href="#panel2" style="font-size:11px;">Only invited authors of books</a></dd>
-  <dd><a href="#panel3" style="font-size:11px;">Didn't recruit diverse potential speakers</a></dd>
-  <dd><a href="#panel4" style="font-size:11px;">Doesn't cover expenses for speakers</a></dd>
-  <dd><a href="#panel5" style="font-size:11px;">Doesn't even have a code of conduct</a></dd>
-</dl>
-<aside>
-<div class="tabs-content">
-  <div class="content active" id="panel1">
-    <p> </p>
-  </div>
-  <div class="content" id="panel2">
-    Perhaps your prioritization of people with their own books to sell led to inadvertent systematic discrimination, as you were reliant on the discriminatory publishing world and more generally on people without significant non-work-related demands on their time. Since I was also disappointed in how much of the conference devolved into the speakers plugging their own books, I am confident you could kill two birds with one stone by instead seeking out the most qualified speakers.
-  </div>
-  <div class="content" id="panel3">
-    Perhaps your selection process produced a skewed pool of potential speakers, but it is disappointing that when you saw that outcome you did not step back to consider which speakers were missing from your consideration.
-  </div>
-  <div class="content" id="panel4">
-    Perhaps your inability to cover even conference expenses, much less compensate your speakers, led to only people with the support of a company being willing to parcipate, leaving you vulnerable to the discriminatory policies of those companies.  Even if you do not routinely cover expenses or provide compensation, consider reaching out directly to speakers that would enrich your program and offering to compensate them.
-  </div>
-  <div class="content" id="panel5">
-    You should consider adopting an anti-harassment policy and reaching out to a more diverse group of potential speakers.  This could increase attendence, both because more people will feel comfortable attending but also because your attendees will have the opportunity to hear from the excellent speakers you have thus far obviously overlooked.
-  </div>
-</div>
-
-<div class="text">This impression has a direct impact on your event.  When I was trying to build a group from <input type="text" style="display:inline; width: 300px; margin:0; padding:0 5px;" placeholder="Your Company or organization"/> to attend this event, it was difficult to generate interest among some people who would normally be enthusiastic about attending an event like this.  Without any <input type="test" style="display:inline; width:300px;" placeholder="The marginalize group overlooked"/> speaking <span class="displayifreallybad">or even token efforts towards diversity</span>, there was no evidence that there would exist other <span class="marginalizeGroup placeholder">placeholder</span> there or that the organizers of this event see <span class="marginalizeGroup placeholder">placeholder</span> as peers.  Experience has taught that this attitude is likely to be reflected in the attendees of your event, cultivating an atmosphere that supports microaggressions and potentially outright harassment.  It can also signal that any complaints about the conference or behavior of attendees will be brushed off as disruptive to the existing exclusionary atmosphere that it appears this event has cultivated.</div>
-
-<p class="text">Going forward, if I see another line up of all $PRIVILEGED_GROUP speaking at your conference, I will have to assume you are actively working to run a conference to alienate <span class="marginalizeGroup placeholder">placeholder</span>.  Since I’m not interested in that environment, this may be my last <span class="eventName placeholder">placeholder</span>; I could instead have attended <input type="text" style="display:inline; width: 500px; margin:0;" placeholder="Other conference that bothered to make an effort"/> where I know I and my peers would both have felt more welcome.</p>
-
-</div>
-
-<div class="content active" id="consideringattending">
-<p class="text">
-Dear <input type="text" style="display: inline; width: 300px;" placeholder="Person Being Addressed"/></p>
-<p class="text">
-I saw the announcement for <input type="text" style="display: inline; width: 300px;" placeholder="Event Name"/> and was interested in attending.  When I looked over the list of speakers I noticed there was a lack of speakers who are <span class="marginalizeGroup placeholder">placeholder</span>.  This was disappointing because I find that having more voices sparks conversations and insights that wouldn’t happen without the presence of <span class="marginalizeGroup placeholder">placeholder</span>.   </p>
-<p class="text">
-I am both a member of this community and <span class="marginalizeGroup placeholder">placeholder</span>.  I find it discouraging to not see my presence reflected in the speakers.</p>
-<p class="text">
-There are a variety of ways in which unintentional bias can lead to homogenous speakers at a conference. Mentioning diversity in calls for speakers, performing active outreach to marginalized groups,  and encouraging new people to become speakers are all methods of increasing the effectiveness of recruitment.</p>
-<p class="text">
-It is necessary to take concrete steps to counteract bias in order to have a conference that reflects the strengths of our diverse community. For further information please check out <input type="text" style="display: inline; width: 300px;" placeholder="Site Reverence"/> which has a variety of resources to help organizers increase diversity</p>
-</div>
+		  <div class="content active" id="consideringattending">
+            <p class="text">
+              Dear <input type="text" style="display: inline; width: 300px;" placeholder="Person Being Addressed"/>
+			</p>
+            <p class="text">
+			  I saw the announcement for <input data-type="eventName" type="text" style="display: inline; width: 300px;" placeholder="Event Name"/> and was interested in attending.  When I looked over the list of speakers I noticed there was a lack of speakers who are <input data-type="marginalizedGroup" type="test" style="display:inline; width:300px;" placeholder="marginalized demographic"/>.  This was disappointing because I find that having more voices sparks conversations and insights that wouldn’t happen without the presence of <input data-type="membersOfTheMarginalizedGroup" type="test" style="display:inline; width:300px;" placeholder="members of the marginalized group"/>.   
+			</p>
+			<br/>
+            <p class="text">
+              I am both a member of this community and <span class="marginalizedGroup placeholder">marginalized demographic</span>.  I find it discouraging to not see my presence reflected in the speakers.
+			</p>
+			<br/>
+            <p class="text">
+				There are a variety of ways in which unintentional bias can lead to homogenous speakers at a conference. Mentioning diversity in calls for speakers, performing active outreach to marginalized groups, and encouraging new people to become speakers are all methods of increasing the effectiveness of recruitment.
+		    </p>
+			<br/>
+            <p class="text">
+              It is necessary to take concrete steps to counteract bias in order to have a conference that reflects the strengths of our diverse community. For further information please check out <input type="text" style="display: inline; width: 300px;" placeholder="Site Reference"/> which has a variety of resources to help organizers increase diversity
+			</p>
+          </div>
 		
-<a href="javascript:sample.open_email()" class="button expand openinemail" aria-label="open in email client">Open In Email Client</a>   
+		  <a href="javascript:sample.open_email()" class="button expand openinemail" aria-label="open in email client">Open In Email Client</a>   
 
 		</div>
 	  </div>
@@ -120,23 +138,20 @@ It is necessary to take concrete steps to counteract bias in order to have a con
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+	  $('[data-type]').change(function(){sample.set_value_on_change(this)});
     </script>
 	
-<div class="row">
-	<div class="large-12 columns" style="color:white; padding:20px 50px 20px;">
-	<p xmlns:dct="http://purl.org/dc/terms/" style=" font-size:10px;">
-  <a rel="license"
-     href="http://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
-  </a>
-  <br />
-  To the extent possible under law,
-  <span rel="dct:publisher" resource="[_:publisher]">the person who associated CC0</span>
-  with this work has waived all copyright and related or neighboring
-  rights to this work.
-</p>
-</div>
-</div>
+    <div class="row">
+      <div class="large-12 columns" style="color:white; padding:20px 50px 20px;">
+	    <p xmlns:dct="http://purl.org/dc/terms/" style=" font-size:10px;">
+          <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+            <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+          </a>
+          <br />
+          To the extent possible under law, <span rel="dct:publisher" resource="[_:publisher]">the person who associated CC0</span> with this work has waived all copyright and related or neighboring rights to this work.
+        </p>
+      </div>
+    </div>
 
   </body>
 </html>
